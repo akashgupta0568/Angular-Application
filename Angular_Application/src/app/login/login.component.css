@@ -1,10 +1,22 @@
 body{
-    height: 100vh;
+    /* height: 100vh; */
     font-family:  roboto,"Noto Sans Myanmar UI",arial,sans-serif;
+}
+
+h1{
+    color: whitesmoke;
+}
+p{
+    color: whitesmoke;
+}
+label{
+    color: whitesmoke;
 }
 .background{
     position: fixed;
-    background: #fff;
+    /* background: #fff; */
+    background-image: url('../../assets/Images/background.jpg');
+    background-size: cover;
     width: 100%;
     height: 100vh;
     display: flex;
@@ -12,11 +24,21 @@ body{
     align-items: center;
 }
 
+.form-control:focus {
+    border-color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgb(255, 255, 255);
+} 
+
+.btn:active, .btn:focus{
+    border-color: #ffffff;
+    box-shadow: 0 0 0 0.2rem rgb(255, 255, 255);
+  }
+
 .loginDshboard{
     width: 50%;margin: auto;
     box-shadow: 0 0 1px 0 rgba(25,25,25,0.04);
     border-radius: 10px;
-    background: transparent;
+    background:rgba(0, 0, 0, 0.87);
     border: solid 1px grey;
 }
 
