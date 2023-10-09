@@ -1,6 +1,12 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0;  font-family:  roboto,"Noto Sans Myanmar UI",arial,sans-serif;
-}
+html, body { height: 100%; margin: 0;  font-family:  roboto,"Noto Sans Myanmar UI",arial,sans-serif; }
 
+
+.mainDiv{
+   height: 100vh;
+   background-image: url('../src/assets/Images/background.jpg');
+   background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

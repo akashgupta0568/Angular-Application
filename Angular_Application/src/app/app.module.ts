@@ -6,12 +6,15 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
-import { LoginComponent } from './login/login.component';
-
+import { LoginComponent } from '../login/login.component';
+import { ForgetpasswordComponent } from '../forgetpassword/forgetpassword.component';
+import { TimezoneComponent } from '../timezone/timezone.component';
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    ForgetpasswordComponent,
+    TimezoneComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,86 @@
+<style>
+    button{
+        margin: 5px;
+    }
+</style>
+
+<div class="background">
+   
+    <!-- <img src="/assets/icons/bootstrap.svg" alt="Bootstrap" width="32" height="32"> -->
+    <div style="width: 100%;height: 50vh;" *ngIf="!this.ShowHide">
+        <!-- shadow p-3 mb-5 bg-light rounded -->
+        <div  class="loginDshboard " >
+
+            <div style="padding:10px; text-align: center;">
+                <h1>Aexcsas</h1>
+                
+            </div>
+            <div style="padding: 10px;">
+                <form>
+                    <div class="form-group">
+                        <label for="username">Uername</label>
+                        <br/>
+                        <input type="text" id="username"  class="form-control" /> 
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label><br/>
+                        <input type="password" id="password"  class="form-control" /> 
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <br/>
+                    <button class="btn btn-dark" (click)="login($event)" >Login</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- Create Account -->
+    <div style="width: 100%;height: 50vh;" *ngIf="this.ShowHide">
+        <!-- shadow p-3 mb-5 bg-light rounded -->
+        <div  class="loginDshboard " >
+
+            <div style="padding:10px; text-align: center;">
+                <h1>Aexcsas Create Account</h1>
+                
+            </div>
+            <div style="padding: 10px;">
+                <form>
+                    <div class="form-group">
+                        <label for="username">Uername</label>
+                        <br/>
+                        <input type="text" id="username"  class="form-control" /> 
+                    </div>
+                    <div class="form-group">
+                        <label for="password">Password</label><br/>
+                        <input type="password" id="password"  class="form-control" /> 
+                    </div>
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                      </div>
+                      <br/>
+                    <button class="btn btn-dark" (click)="login($event)" >Login</button>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+    <div style="bottom: 20px;position: fixed;">
+        <button class="btn btn-dark" routerLink="/forgetPassword">Forget Password</button>
+        <button class="btn btn-dark" (click)="showhide()">Create Account</button>
+        <button class="btn btn-dark">Change Theme</button>
+        
+    </div>
+
+    <div class="chat-icon">
+        <i class="bi bi-chat-left-dots" id="chat-button" style="font-size: 1.5rem; color:whitesmoke;" value="Chat"></i>
+        
+    </div>
+</div>
+
+
+
